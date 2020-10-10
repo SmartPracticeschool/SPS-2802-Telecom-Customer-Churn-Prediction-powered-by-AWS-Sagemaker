@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    .bg-light{
+      /* background-color: rgb(248, 249, 250); */
+      background-image: linear-gradient(120deg, #23a2ec, #cc71d8);
+      font-family: 'Poppins', sans-serif;
+      
+    }
+    .header{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      color: white;
+    }
+    .jumbotron{
+      padding-left: 50px;
+      margin-left: 200px;
+    }
+
+    
+  </style>
+
+
+
+
+
+  <title>Customer Churn Prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  
+
+</head>
+<body class="bg-light">
+  
+  <div class="container">
+    <div class="header">
+      <h1><center>Customer Churn Prediction</center></h1>
+      <br>
+      <br>
+    </div>
+
+
+    <form action="/" method="post" class="col-md-8 jumbotron">
+        
+      <div class="form-group row">
+          <label for="creditscore" class="col-md-2 col-form-label">Credit Score</label>
+          <div class="col-md-10">
+            <input type="text" class="form-control" name="creditscore" placeholder="Enter Credit Score">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-check" >
+            <label for="geography" class="col-md-2 col-form-label">Geography</label>
+            <div class="col-md-10">
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="geography"  value="1" >
+                  <label class="form-check-label" for="gridRadios1">
+                    France
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="geography"  value="2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Spain
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="geography"  value="3">
+                  <label class="form-check-label" for="gridRadios3">
+                    Germany
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-check">
+            <label for="gender" class="col-md-2 col-form-label">Gender</label>
+            <div class="col-md-10">
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="gender" value="1">
+                <label class="form-check-label" for="gridRadios1">
+                Male
+                </label>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" value="2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="form-group row">
+            <label for="age" class="col-md-2 col-form-label">Age</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" name="age" placeholder="Enter Age">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="tenure" class="col-md-2 col-form-label">Tenure</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" name="tenure" placeholder="Enter the tenure">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="balance" class="col-md-2 col-form-label">Balance</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" name="balance" placeholder="Enter the balance">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="products" class="col-md-2 col-form-label">Number of Products</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" name="products" placeholder="Enter the number of products">
+            </div>
+          </div>
+
+        <div class="form-group row">
+          <div class="form-check">
+            <label for="hascredit" class="col-md-2 col-form-label">Has credit card?</label>
+            <div class="col-md-10">
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="hascredit" value="1">
+                <label class="form-check-label" for="gridRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="hascredit" value="2">
+                  <label class="form-check-label" for="gridRadios2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-check">
+            <label for="activemember" class="col-md-2 col-form-label">Is active member?</label>
+            <div class="col-md-10">
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="activemember" value="1">
+                <label class="form-check-label" for="gridRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="activemember" value="2">
+                  <label class="form-check-label" for="gridRadios2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="form-group row">
+            <label for="salary" class="col-md-2 col-form-label">Estimated Salary</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" name="salary" placeholder="Enter the estimated salary">
+            </div>
+          </div>
+        
+       
+          <div class="col-md-12">
+              <center><button class="btn btn-primary" >Predict</button></center>
+          </div>
+
+          </form>
+      </form>
+    </div>
+</body>
+</html>
