@@ -14,3 +14,6 @@ Build & Deploy a Machine Learning model
 ## Project Architecture:
 
 ![project architecture](data/architecture.png?raw=true "Churn prediction project architecture")
+
+## Project demonstration:
+https://drive.google.com/file/d/1kVHNjicGg8x1AcwaHJeIQvuz0Vc3i5AH/view?usp=sharing
