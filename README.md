@@ -13,4 +13,4 @@ Build & Deploy a Machine Learning model
 
 ## Project Architecture:
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![project architecture](data/architecture.png?raw=true "Churn prediction project architecture")
