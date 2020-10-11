@@ -1,4 +1,4 @@
-﻿# SPS-2802-Telecom-Customer-Churn-Prediction-powered-by-AWS-Sagemaker
+﻿# Telecom Customer Churn Prediction poweredby AWS Sagemaker
  
  ## Project Description
 Customer churn is a major problem and one of the most important concerns for large companies.  Telecommunication industry always suffers from very high churn rates when one industry offers a better plan than the previous there is a high possibility of the customer churning from the present due to a better plan in such a scenario it is very difficult to avoid losses but through prediction, we can keep it to a minimal level.
